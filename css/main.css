@@ -1415,11 +1415,12 @@ a.menu-toggle {
 }
 
 
-/** 
+
+/**
  * ===================================================================
  * about section
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 #about {
@@ -1533,6 +1534,7 @@ a.menu-toggle {
 }
 
 
+
 /** 
  * ===================================================================
  * events section
@@ -1605,173 +1607,6 @@ a.menu-toggle {
 @media only screen and (max-width:400px) {
 	.events-list .feature {
 		padding: 0;
-	}
-}
-
-
-/** 
- * ===================================================================
- * memold section
- *
- * ------------------------------------------------------------------- 
- */
-
-#memold {
-	background: #EAEAED;
-	padding-top: 12rem;
-	padding-bottom: 9.6rem;
-}
-.memold-content {
-	margin-top: 6.6rem;
-	max-width: 1280px;
-}
-.memold-content .bgrid {
-	margin-bottom: 3.6rem;
-}
-.memold-content .price-block {
-	background-color: #FFFFFF;
-	border-radius: 5px;
-	overflow: hidden;
-	text-align: center;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-.memold-content .price-block .top-part,
-.memold-content .price-block .bottom-part {
-	padding: 3.9rem 1.5rem;
-}
-.memold-content .price-block .top-part {
-	background: #58687b;
-	color: #FFFFFF;
-	padding-bottom: 2.4rem;
-	position: relative;
-}
-.memold-content .price-block .bottom-part {
-	padding-top: 2.4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-}
-.memold-content .price-block .plan-title {
-	color: #FFFFFF;
-	padding-bottom: 2.4rem;
-	margin-bottom: 1.2rem;
-	font-size: 2.4rem;
-	position: relative;
-}
-.memold-content .price-block .plan-title::after {
-	display: block;
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 80px;
-	height: 1px;
-	content: '\0020';
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -40px;
-}
-.memold-content .price-block .plan-price {
-	font-family: "raleway-bold", sans-serif;
-	font-size: 5rem;
-	line-height: 1;
-	margin-bottom: .6rem;
-}
-.memold-content .price-block .plan-price sup {
-	font-size: 2.4rem;
-	top: -1.5rem;
-	margin-right: 3px;
-}
-.memold-content .price-block .price-month {
-	margin-bottom: 1.2rem;
-	font-family: "raleway-bold", sans-serif;
-	font-size: 1.6rem;
-}
-.memold-content .price-block .price-meta {
-	color: rgba(255, 255, 255, 0.5);
-	line-height: 1.8rem;
-}
-.memold-content .price-block .button {
-	color: #353F49;
-	padding: 0 5rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-.memold-content .price-block .button:hover,
-.memold-content .price-block .button:focus {
-	background: #58687b;
-	color: #FFFFFF;
-}
-.memold-content .price-block .events {
-	list-style: none;
-	font-family: "raleway-bold", sans-serif;
-	font-size: 1.5rem;
-	color: rgba(0, 0, 0, 0.4);
-	margin: .6rem 0 1.8rem 0;
-}
-.memold-content .price-block .events li {
-	padding: .6rem 0;
-	border-bottom: 1px solid #EAEAED;
-}
-.memold-content .price-block .events li strong {
-	color: #353F49;
-	font-family: "raleway-bold", serif;
-	margin-right: 5px;
-}
-.memold-content .price-block .events li:last-child {
-	border: none;
-}
-.memold-content .primary .top-part {
-	background: #05bca9;
-}
-.memold-content .primary .top-part::before {
-	content: attr(data-info);
-	display: block;
-	min-height: 48px;
-	line-height: 48px;
-	width: 75%;
-	text-align: center;
-	color: #FFFFFF;
-	background: #38424e;
-	font-family: "raleway-heavy", sans-serif;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
-	position: absolute;
-	bottom: -18px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	z-index: 500;
-	border-radius: 5px;
-}
-
-/**
- * responsive:
- * memold
- * -
- */
-
-@media only screen and (max-width:1140px) {
-	.memold-content {
-		max-width: 800px;
-	}
-	.memold-content .bgrid {
-		width: 50%;
-		clear: none;
-	}
-	.memold-content .bgrid:nth-child(2n+1) {
-		clear: both;
-	}
-}
-@media only screen and (max-width:600px) {
-	.memold-content {
-		max-width: 420px;
-	}
-	.memold-content .bgrid {
-		width: 100% !important;
-		float: none !important;
-		clear: both !important;
-		margin-left: 0;
-		margin-right: 0;
 	}
 }
 
@@ -2044,98 +1879,126 @@ a.menu-toggle {
 
 
 
-
-/** 
+/**
  * ===================================================================
- * call-to-action section
+ * contact & links section
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
-#cta {
-	background: #05bca9;
-	padding-top: 7.2rem;
-	padding-bottom: 9rem;
+#contact {
+	background: #EAEAED;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+	overflow: hidden;
+}
+.contact-content {
+	position: relative;
 	text-align: center;
-	color: #FFFFFF;
 }
-.cta-content {
-	max-width: 740px;
-	margin: 0 auto;
-}
-.cta-content h1 {
-	color: #FFFFFF;
-	margin-bottom: .6rem;
-}
-.cta-content p {
-	color: rgba(255, 255, 255, 0.8);
-}
-.cta-content .stores {
-	margin: 0;
-	padding: 0;
-	display: block;
-}
-.cta-content .stores li {
-	padding: 0;
-	display: inline-block;
-}
-.cta-content .stores li .button {
-	background: #04a393;
-	color: #FFFFFF;
-	margin-right: 12px;
-	display: block;
-	line-height: 60px;
-}
-.cta-content .stores li .button:hover,
-.cta-content .stores li .button:focus {
-	background: #049485;
-}
-.cta-content .stores li .button i {
-	font-size: 18px;
-	line-height: inherit;
-	margin-right: 8px;
-}
-.cta-content .stores li .button i.ion-social-windows {
+.contact-content .right-side,
+.contact-content .left-side,
+.contact-content .image-part {
+	width: 33.33333%;
 	font-size: 15px;
+	line-height: 27px;
 }
-.cta-content .stores li:last-child .button {
-	margin-right: 0;
+.contact-content .right-side, .contact-content .left-side {
+	padding: 0 6% 24px;
+	position: absolute;
+	top: 0;
+}
+.contact-content .right-side {
+	right: 0;
+}
+.contact-content .left-side {
+	left: 0;
+}
+.contact-content .image-part {
+	margin: 0 auto;
+	height: 660px;
+	background-image: url("../images/appdesign.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
+}
+.contact-content .item[data-item]::before {
+	background: #38424e;
+	color: #FFFFFF;
+	border-radius: 100%;
+	font-family: "montserrat-bold", sans-serif;
+	content: attr(data-item);
+	display: inline-block;
+	font-size: 18px;
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 1.5rem;
+}
+.contact-content h5 {
+	color: #05bca9;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	letter-spacing: .2rem;
+	margin-bottom: .3rem;
 }
 
 /**
  * responsive:
- * cta
+ * contact
  * -
  */
 
-@media only screen and (max-width:650px) {
-	.cta-content {
-		max-width: 650px;
+@media only screen and (max-width:1024px) {
+	.contact-content .right-side, .contact-content .left-side {
+		padding: 0 3% 24px;
+		width: 35%;
 	}
-	.cta-content .stores li {
-		display: block;
-	}
-	.cta-content .stores li .button {
-		width: 300px;
-		display: block;
-		margin-left: auto !important;
-		margin-right: auto !important;
-		margin-bottom: 1.8rem;
-	}
-	.cta-content .stores li .button::before {
-		display: none;
+	.contact-content .image-part {
+		height: 600px;
+		width: 30%;
 	}
 }
-@media only screen and (max-width:600px) {
-	.cta-content .stores li .button {
-		width: 70%;
+@media only screen and (max-width:768px) {
+	#contact {
+		padding-bottom: 27rem;
+	}
+	.contact-content .right-side, .contact-content .left-side {
+		position: static;
+		width: 100%;
+		max-width: 480px;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 0;
+	}
+	.contact-content .image-part {
+		width: 300px;
+		position: absolute;
+		bottom: -630px;
+		left: 50%;
+		margin-left: -150px;
 	}
 }
 @media only screen and (max-width:400px) {
-	.cta-content .stores li .button {
-		width: 80%;
+	#contact {
+		padding-bottom: 21rem;
+	}
+	.contact-content .image-part {
+		width: 230px;
+		bottom: -540px;
+		margin-left: -115px;
 	}
 }
+
+
+
+
 
 /**
  * ===================================================================
