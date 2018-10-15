@@ -1423,11 +1423,12 @@ a.menu-toggle {
  */
 
 #events2 {
-	background: #FFFFFF;
+	background: #FFFFFF; /*05bca9*/
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 	overflow: hidden;
 }
+
 
 /**
  * ===================================================================
