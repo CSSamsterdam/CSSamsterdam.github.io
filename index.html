@@ -70,7 +70,7 @@
 
 
          eventMouseover: function(calEvent, jsEvent) {
-            var tooltip = '<div class="tooltipevent" style="width:200px;height:100px;background:#ccc;position:absolute;z-index:10001;">' + calEvent.description + '</div>';
+            var tooltip = '<div class="tooltipevent" style="width:800px;height:auto;background:white;position:absolute;z-index:10001;">' + calEvent.description + '</div>';
             $("body").append(tooltip);
             $(this).mouseover(function(e) {
                 $(this).css('z-index', 10000);
