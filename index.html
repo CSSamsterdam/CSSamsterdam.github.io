@@ -34,10 +34,11 @@
   <script src='./node_modules/fullcalendar/dist/fullcalendar.min.js'></script>
   <script type='text/javascript' src='./node_modules/fullcalendar/dist/gcal.js'></script>
 
-      <script>
-         $(document).ready(function() {
+      <script type="text/javascript">
+          var jQuery_fC = $.noConflict(true);
+         jQuery_fC(document).ready(function() {
          	
-         	$('#calendar').fullCalendar({
+         	jQuery_fC('#calendar').fullCalendar({
          		header: {
          			left: '',
          			
@@ -57,9 +58,6 @@
          
              alert('Event: ' + event.title + '\nDescription: ' + event.description);
              return false;
-         
-             // change the border color just for fun
-             $(this).css('border-color', 'red');
          
           },
          
@@ -115,7 +113,7 @@
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 					<li><a class="smoothscroll"  href="#about" title="">About</a></li>
 					<li><a class="smoothscroll"  href="#research" title="">research</a></li>
-					<li><a class="smoothscroll"  href="#events" title="">events</a></li>
+					<li><a class="smoothscroll"  href="#events2" title="">events</a></li>
 					<li><a class="smoothscroll"  href="#members" title="">members</a></li>
 					<li><a class="smoothscroll"  href="#contact" title="">contact</a></li>
 
@@ -147,7 +145,7 @@
 	   			<h5>We are</h5>
 	   			<h1>Computational Social Science Amsterdam</h1>
 
-	   			<a class="button stroke smoothscroll" href="#events" title="">Events</a>
+	   			<a class="button stroke smoothscroll" href="#events2" title="">Events</a>
 
 	   		</div>  
    			
@@ -623,12 +621,17 @@
 
    <!--</footer>  -->
 
+   <<!-- div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
 
 
+ -->
+ 
    <!-- Java Script
    ================================================== --> 
-   <!-- <script src="js/jquery-1.11.3.min.js"></script> -->
-   <!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
 
