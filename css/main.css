@@ -1423,10 +1423,24 @@ a.menu-toggle {
  */
 
 #events2 {
-	background: #FFFFFF; /*05bca9*/
+	background: #ADD8E6; /*05bca9*/
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 	overflow: hidden;
+
+    background: #14181E url(../images/zebra1.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+}
+
+#calendar{
+	background: #FFFFFF;
 }
 
 

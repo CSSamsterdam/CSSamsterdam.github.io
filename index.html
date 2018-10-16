@@ -39,14 +39,14 @@
       <script type="text/javascript">
           var jQuery_fC = $.noConflict(true);
          jQuery_fC(document).ready(function() {
-         	
+
          	jQuery_fC('#calendar').fullCalendar({
          		header: {
          			left: '',
-         			
+
          			right: ''
          		},
-         
+
          		editable: false,
          		defaultView: 'listYear',
          		eventLimit: true, // allow "more" link when too many events
@@ -54,16 +54,16 @@
                googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
                googleCalendarId: 'uvacss@gmail.com',
                textColor:"black"
-         
+
              },
            eventClick: function(event) {
-         
+
              alert('Event: ' + event.title + '\nDescription: ' + event.description);
              return false;
-         
+
           },
-         
-         
+
+
          eventMouseover: function(calEvent, jsEvent) {
             var tooltip = '<div class="tooltipevent" style="width:200px;height:100px;background:#ccc;position:absolute;z-index:10001;">' + calEvent.description + '</div>';
             $("body").append(tooltip);
@@ -76,19 +76,19 @@
                 $('.tooltipevent').css('left', e.pageX + 20);
             });
          },
-         
+
          eventMouseout: function(calEvent, jsEvent) {
              $(this).css('z-index', 8);
              $('.tooltipevent').remove();
          },
-         
-         
-         
+
+
+
          	});
-         	
+
          });
-         
-      </script>	
+
+      </script>
 
 
 
@@ -259,9 +259,11 @@
 	<section id="events2">
 
 		<div class="row section-intro">
-   		<!-- <div class="col-twelve with-bottom-line"> -->
-
+   		<div class="col-twelve with-bottom-line">
+			<p> </p>
    			<h5>events</h5>
+			<p> </p>
+		</div>
 
 	      <!-- </div> events-list -->
 			<!--@TODO: implement nicer calender style -->
