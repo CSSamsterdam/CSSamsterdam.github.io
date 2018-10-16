@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Lhander</title>
+	<title>Computational Social Science -- Amsterdam</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -46,9 +46,14 @@
 
          			right: ''
          		},
-
+            views: {
+                list: {
+                    duration: { days: 180 },
+                    listDayAltFormat: 'dddd',
+                }
+            },
          		editable: false,
-         		defaultView: 'listYear',
+         		defaultView: 'list',
          		eventLimit: true, // allow "more" link when too many events
              events: {
                googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
@@ -58,14 +63,14 @@
              },
            eventClick: function(event) {
 
-             alert('Event: ' + event.title + '\nDescription: ' + event.description);
+             //alert('Event: ' + event.title + '\nDescription: ' + event.description);
              return false;
 
           },
 
 
          eventMouseover: function(calEvent, jsEvent) {
-            var tooltip = '<div class="tooltipevent" style="width:200px;height:100px;background:#ccc;position:absolute;z-index:10001;">' + calEvent.description + '</div>';
+            var tooltip = '<div class="tooltipevent" style="width:800px;height:auto;background:white;position:absolute;z-index:10001;">' + calEvent.description + '</div>';
             $("body").append(tooltip);
             $(this).mouseover(function(e) {
                 $(this).css('z-index', 10000);
@@ -182,17 +187,17 @@
    		</div>
 			<p style="font-size:0">..</p>
 
-			<p class="lead">
+			<p class="lead" align="justify">
 				We are social scientists using large datasets, algorithms, network science, automated text analysis and agent based models in our research.
 				Organised in this group, we share knowledge, skills and inspirations.
 			</p>
 			<!--<h6>Background</h6>-->
-			<p>
+			<p  align="justify">
 				An increasing number of research groups at the social science faculties at the University of Amsterdam and VU Amsterdam use computational methods for their research, and this trend will only grow in
 				the future. In the last years, many new researchers skilled with computational methods and large amounts of data have entered the social science faculties. However, up till now, there were very few cross-fertilizations happening between
 				these computational scholars in the different departments.
 			</p>
-			<p>
+			<p  align="justify">
 				We recently closed this gap, strengthening the community by organizing the Computational Social Science Amsterdam club.
 				We organize seminars, workshops and best practices sharing session, for which we regularly invite scholars of other universities and institutes. We also organise 1-day intensive courses for beginners,
 				to share our knowledge.
@@ -261,7 +266,9 @@
    		<div class="col-twelve with-bottom-line">
 			<p> </p>
    			<h5>events</h5>
-			<p></p>
+			<p>Sign up for our <a href="https://calendar.google.com/calendar/b/8?cid=dXZhY3NzQGdtYWlsLmNvbQ">calendar</a> and <a href="https://list.uva.nl/mailman/listinfo/css">mailing list</a></p>
+
+
 		</div>
 
 	      <!-- </div> events-list -->
@@ -360,7 +367,7 @@
                	<div class="testimonial-author">
                     	<img src="images/members/jonashaslbeck_squared.png" alt="Author image">
                     	<div class="author-info">
-                    		Jonas Haslbeck
+                    		Jonas Halsbeck
                     		<span>PhD, UvA Psychology</span>
                     	</div>
                   </div>
@@ -646,6 +653,7 @@
 			<p>
 				We thank the following partners for their contributions:
 			</p>
+
 			<p>
 				<!--@TODO: Make this logo smaller-->
 					<img src="images/logos-odycceus.png" alt="Author image">
