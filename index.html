@@ -46,9 +46,14 @@
 
          			right: ''
          		},
-
+            views: {
+                list: {
+                    duration: { days: 180 },
+                    listDayAltFormat: 'dddd',
+                }
+            },
          		editable: false,
-         		defaultView: 'listYear',
+         		defaultView: 'list',
          		eventLimit: true, // allow "more" link when too many events
              events: {
                googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
