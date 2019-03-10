@@ -55,12 +55,26 @@
          		editable: false,
          		defaultView: 'list',
          		eventLimit: true, // allow "more" link when too many events
-             events: {
-               googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
-               googleCalendarId: 'uvacss@gmail.com',
-               textColor:"black"
+             // events: {
+             //   googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
+             //   googleCalendarId: 'uvacss@gmail.com',
+             //   textColor:"black"
 
-             },
+             // },
+             googleCalendarApiKey: 'AIzaSyAgYUPBltxTMPACHXqVdV3-1be9LAJP1n0',
+
+            eventSources: [
+              {
+                googleCalendarId: 'uvacss@gmail.com',
+                textColor:"black"
+              },
+              {
+                googleCalendarId: 'm3f0gh2430v9h2fdk9ak9uknqc@group.calendar.google.com',
+                textColor:"black",
+                color:"#6bb486"
+              }
+            ],
+
            eventClick: function(event) {
 
              //alert('Event: ' + event.title + '\nDescription: ' + event.description);
@@ -175,15 +189,6 @@
    	<!-- Modal Popup
 	   ========================================================= -->
 
-      <div id="video-popup" class="popup-modal mfp-hide">
-
-		   <div class="fluid-video-wrapper">
-            <iframe src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=faec09" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-         </div>		     
-
-         <a class="close-popup">Close</a>         
-
-	   </div> <!-- /video-popup -->  	 	
 
    </section> <!-- /intro -->
 
