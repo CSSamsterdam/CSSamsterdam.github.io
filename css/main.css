@@ -1452,6 +1452,23 @@ a.menu-toggle {
 	position: relative;
 }
 
+#foto {
+	background: #ADD8E6; /*05bca9*/
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+	overflow: hidden;
+
+    background: #14181E url(../images/crowd_amsterdam.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 20%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+}
+
 #calendar{
 	background: #FFFFFF;
 }
@@ -1738,6 +1755,8 @@ a.menu-toggle {
 	vertical-align: middle;
 	border: 4px solid #EAEAED;
 }
+
+
 
 #testimonial-slider .testimonial-author .author-info {
 	display: inline-block;
@@ -2172,6 +2191,133 @@ a.menu-toggle {
 	}
 }
 
+
+
+
+
+/**
+ * ===================================================================
+ * parnters section
+ *
+ * -------------------------------------------------------------------
+ */
+
+
+
+
+#partners {
+	background: #FFFFFF;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+	overflow: hidden;
+}
+.partners-content {
+	position: relative;
+	text-align: center;
+}
+.partners-content .right-side,
+.partners-content .left-side,
+.partners-content .image-part {
+	width: 33.33333%;
+	font-size: 15px;
+	line-height: 27px;
+}
+.partners-content .right-side, .partners-content .left-side {
+	padding: 0 6% 24px;
+	position: absolute;
+	top: 0;
+}
+.partners-content .right-side {
+	right: 0;
+}
+.partners-content .left-side {
+	left: 0;
+}
+.partners-content .image-part {
+	margin: 0 auto;
+	height: 660px;
+	background-image: url("../images/appdesign.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
+}
+.partners-content .item[data-item]::before {
+	background: #38424e;
+	color: #FFFFFF;
+	border-radius: 100%;
+	font-family: "montserrat-bold", sans-serif;
+	content: attr(data-item);
+	display: inline-block;
+	font-size: 18px;
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 1.5rem;
+}
+.partners-content h5 {
+	color: #05bca9;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	letter-spacing: .2rem;
+	margin-bottom: .3rem;
+}
+
+/**
+ * responsive:
+ * parnter
+ * -
+ */
+
+@media only screen and (max-width:1024px) {
+	.partners-content .right-side, .partners-content .left-side {
+		padding: 0 3% 24px;
+		width: 35%;
+	}
+	.partners-content .image-part {
+		height: 600px;
+		width: 30%;
+	}
+}
+@media only screen and (max-width:768px) {
+	#partners {
+		padding-bottom: 27rem;
+	}
+	.partners-content .right-side, .partners-content .left-side {
+		position: static;
+		width: 100%;
+		max-width: 480px;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 0;
+	}
+	.partners-content .image-part {
+		width: 300px;
+		position: absolute;
+		bottom: -630px;
+		left: 50%;
+		margin-left: -150px;
+	}
+}
+@media only screen and (max-width:400px) {
+	#partners {
+		padding-bottom: 21rem;
+	}
+	.partners-content .image-part {
+		width: 230px;
+		bottom: -540px;
+		margin-left: -115px;
+	}
+}
+
+
+
+
 /** 
  * ===================================================================
  * footer
@@ -2391,3 +2537,7 @@ footer ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*# Override image class in bgrid, to undo rounding images */
+
+
